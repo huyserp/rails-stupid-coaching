@@ -3,8 +3,9 @@ class QuestionsController < ApplicationController
 
   def answer
     @question = params[:question]
+    @question = '' if @question.nil?
     @answer = "I don't care, get dressed and go to work!"
     @answer = 'Silly question, get dressed and go to work!' if @question.include?('?')
-    @answer = 'Great!' if @question == 'I am going to work'
+    @answer = 'Great!' if @question.downcase == 'i am going to work'
   end
 end

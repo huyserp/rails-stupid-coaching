@@ -1,7 +1,11 @@
 <h1>Stupid Coaching</h1>
+<% if @question.empty? %>
+<p>You need to ask a question, Obvi</p>
+<%= link_to "Here's where you'd do that...", ask_path %>
+<% else %>
 <p><%= @question %></p>
-<p>-You</p>
+<p><i>-You</i></p>
 <p><%= @answer %></p>
-<p>-Your coach</p>
-
+<p><i>-Your Coach</i></p>
 <%= link_to "Ask Another Question", ask_path %>
+<% end %>
