@@ -1,3 +1,121 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Staatliches&display=swap');
+
+body {
+  background-color: #f8f1f1;
+}
+
+.container {
+  width: 650px;
+  height: 250px;
+  border-radius: 45%;
+  margin: 64px auto;
+  background-color: #a3d2ca;
+  padding-top: 72px;
+  border: .5px solid rgba(94, 170, 168, .3);
+  box-shadow: 16px 24px 64px #5eaaa8
+}
+
+.content {
+  margin: 0 auto;
+}
+
+h1 {
+  width: 375px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: .3em;
+  color: rgba(219, 100, 0, .6);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(219, 100, 0, .3);
+  border-left: 1px solid rgba(219, 100, 0, .3);
+}
+
+form {
+  margin-top: 16px;
+  text-align: center;
+    #btn-ask, #question {
+      font-size: 24px;
+      font-family: 'East Sea Dokdo', cursive;
+      text-align: center;
+      border: 1px solid #5eaaa8;
+      box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+      border-radius: 5px;
+      padding: 8px;
+    }
+   #question {
+    width: 250px;
+    color: rgba(219, 100, 0, .7);
+    &::placeholder {
+      color: rgba(219, 100, 0, .3);
+    }
+    &:focus, :hover {
+      outline: none;
+      color: rgba(219, 100, 0, .7);
+    }
+  }
+  #btn-ask {
+    background-color: #db6400;
+    color: #5eaaa8;
+    text-shadow: 1px 2px 4px rgba(0,0,0,.3);
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+    background-color: #5eaaa8;
+    color: #db6400;
+    text-shadow: 1px 2px 4px rgba(0,0,0,.3);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: 28px;
+  font-family: 'East Sea Dokdo', cursive;
+  background-color: rgba(94, 170, 168, .7);
+  color: #db6400;
+  text-shadow: 1px 2px 4px rgba(0,0,0,.1);
+  padding: 8px;
+  border-radius: 8px;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+  background-color: #db6400;
+  color: #5eaaa8;
+  text-shadow: 1px 2px 4px rgba(0,0,0,.3);
+  }
+}
+
+.answer-container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.answer-content {
+  font-size: 24px;
+  font-family: 'East Sea Dokdo', cursive;
+  font-weight: bold;
+  color: rgb(219, 100, 0);
+  text-shadow: 1px 2px 2px rgba(0,0,0,.1);
+  letter-spacing: .1em;
+  width: 200px;
+  border-radius: 35%;
+  margin: 32px auto;
+  background-color: #a3d2ca;
+  padding: 16px;
+  border: .5px solid rgba(94, 170, 168, .3);
+  box-shadow: 16px 24px 64px #5eaaa8;
+}
+
+.align-left {
+  margin-right: 250px;
+}
+
+.align-right{
+  margin-left: 250px;
+}

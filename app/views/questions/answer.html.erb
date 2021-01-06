@@ -1,11 +1,19 @@
-<h1>Stupid Coaching</h1>
-<% if @question.empty? %>
-<p>You need to ask a question, Obvi</p>
-<%= link_to "Here's where you'd do that...", ask_path %>
-<% else %>
-<p><%= @question %></p>
-<p><i>-You</i></p>
-<p><%= @answer %></p>
-<p><i>-Your Coach</i></p>
-<%= link_to "Ask Another Question", ask_path %>
-<% end %>
+<div class="answer-container">
+  <h1>Stupid Coaching</h1>
+  <% if @question.empty? %>
+  <div class="answer-content">
+    <p>You need to ask a question, Obvi</p>
+  </div>
+    <%= link_to "Here's where you'd do that...", ask_path %>
+  <% else %>
+  <div class="answer-content align-right">
+    <p><%= @question.capitalize %></p>
+    <p><i>-You</i></p>
+  </div>
+  <div class="answer-content align-left">
+    <p><%= @answer %></p>
+    <p><i>-Your Coach</i></p>
+  </div>
+  <%= link_to "Ask Another Question", ask_path %>
+  <% end %>
+</div>
