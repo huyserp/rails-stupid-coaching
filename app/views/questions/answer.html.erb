@@ -2,9 +2,9 @@
   <h1>Stupid Coaching</h1>
   <% if @question.empty? %>
   <div class="answer-content">
-    <p>You need to ask a question, Obvi</p>
+    <p style="text-align: center">You need to ask a question, Obvi...</p>
   </div>
-    <%= link_to "Here's where you'd do that...", ask_path %>
+    <%= link_to "try again", ask_path %>
   <% else %>
   <div class="answer-content align-right">
     <p><%= @question.capitalize %></p>
